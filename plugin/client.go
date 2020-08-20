@@ -7,8 +7,8 @@ import (
 
 	"github.com/hashicorp/go-hclog"
 	plugin "github.com/hashicorp/go-plugin"
-	"github.com/terraform-linters/tflint-plugin-sdk/tflint"
-	tfserver "github.com/terraform-linters/tflint-plugin-sdk/tflint/server"
+	"github.com/markliederbach/tflint-plugin-sdk/tflint"
+	tfserver "github.com/markliederbach/tflint-plugin-sdk/tflint/server"
 )
 
 // Client is an RPC client for the host.

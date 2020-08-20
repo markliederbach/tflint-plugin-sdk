@@ -2,7 +2,7 @@ package client
 
 import (
 	"github.com/hashicorp/hcl/v2"
-	"github.com/terraform-linters/tflint-plugin-sdk/tflint"
+	"github.com/markliederbach/tflint-plugin-sdk/tflint"
 )
 
 func encodeExpr(src []byte, expr hcl.Expression) ([]byte, hcl.Range) {

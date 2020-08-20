@@ -7,7 +7,7 @@ import (
 	"github.com/hashicorp/go-version"
 	hcl "github.com/hashicorp/hcl/v2"
 	"github.com/hashicorp/hcl/v2/hclsyntax"
-	"github.com/terraform-linters/tflint-plugin-sdk/terraform"
+	"github.com/markliederbach/tflint-plugin-sdk/terraform"
 )
 
 // Attribute is an intermediate representation of hcl.Attribute.

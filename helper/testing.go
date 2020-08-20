@@ -8,7 +8,7 @@ import (
 	"github.com/google/go-cmp/cmp/cmpopts"
 	"github.com/hashicorp/hcl/v2"
 	"github.com/hashicorp/hcl/v2/hclparse"
-	"github.com/terraform-linters/tflint-plugin-sdk/tflint"
+	"github.com/markliederbach/tflint-plugin-sdk/tflint"
 )
 
 // TestRunner returns a mock Runner for testing.
