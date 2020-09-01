@@ -5,7 +5,7 @@ import (
 	"net/rpc"
 
 	plugin "github.com/hashicorp/go-plugin"
-	"github.com/terraform-linters/tflint-plugin-sdk/tflint"
+	"github.com/markliederbach/tflint-plugin-sdk/tflint"
 )
 
 // handShakeConfig is used for UX. ProcotolVersion will be updated by incompatible changes.

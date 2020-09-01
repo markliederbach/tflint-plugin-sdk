@@ -1,6 +1,6 @@
 package server
 
-import "github.com/terraform-linters/tflint-plugin-sdk/tflint/client"
+import "github.com/markliederbach/tflint-plugin-sdk/tflint/client"
 
 // Server is the interface that hosts that provide the plugin mechanism must meet in order to respond to queries from the plugin.
 type Server interface {

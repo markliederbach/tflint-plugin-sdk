@@ -2,8 +2,8 @@ package plugin
 
 import (
 	plugin "github.com/hashicorp/go-plugin"
-	"github.com/terraform-linters/tflint-plugin-sdk/tflint"
-	tfclient "github.com/terraform-linters/tflint-plugin-sdk/tflint/client"
+	"github.com/markliederbach/tflint-plugin-sdk/tflint"
+	tfclient "github.com/markliederbach/tflint-plugin-sdk/tflint/client"
 )
 
 // Server is an RPC server acting as a plugin.

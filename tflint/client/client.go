@@ -8,8 +8,8 @@ import (
 	"net/rpc"
 
 	hcl "github.com/hashicorp/hcl/v2"
-	"github.com/terraform-linters/tflint-plugin-sdk/terraform"
-	"github.com/terraform-linters/tflint-plugin-sdk/tflint"
+	"github.com/markliederbach/tflint-plugin-sdk/terraform"
+	"github.com/markliederbach/tflint-plugin-sdk/tflint"
 	"github.com/zclconf/go-cty/cty"
 	"github.com/zclconf/go-cty/cty/gocty"
 )
