@@ -2,7 +2,7 @@ package client
 
 import (
 	hcl "github.com/hashicorp/hcl/v2"
-	"github.com/terraform-linters/tflint-plugin-sdk/terraform/configs"
+	"github.com/markliederbach/tflint-plugin-sdk/terraform/configs"
 )
 
 // Provisioner is an intermediate representation of terraform.Provisioner.

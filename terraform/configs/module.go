@@ -1,8 +1,8 @@
 package configs
 
 import (
-	"github.com/terraform-linters/tflint-plugin-sdk/terraform/addrs"
-	"github.com/terraform-linters/tflint-plugin-sdk/terraform/experiments"
+	"github.com/markliederbach/tflint-plugin-sdk/terraform/addrs"
+	"github.com/markliederbach/tflint-plugin-sdk/terraform/experiments"
 )
 
 // Module is an alternative representation of configs.Module.

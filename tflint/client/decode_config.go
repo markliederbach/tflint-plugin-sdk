@@ -3,8 +3,8 @@ package client
 import (
 	"github.com/hashicorp/go-version"
 	hcl "github.com/hashicorp/hcl/v2"
-	"github.com/terraform-linters/tflint-plugin-sdk/terraform/addrs"
-	"github.com/terraform-linters/tflint-plugin-sdk/terraform/configs"
+	"github.com/markliederbach/tflint-plugin-sdk/terraform/addrs"
+	"github.com/markliederbach/tflint-plugin-sdk/terraform/configs"
 )
 
 // Config is an intermediate representation of configs.Config.

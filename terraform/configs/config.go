@@ -3,7 +3,7 @@ package configs
 import (
 	"github.com/hashicorp/go-version"
 	"github.com/hashicorp/hcl/v2"
-	"github.com/terraform-linters/tflint-plugin-sdk/terraform/addrs"
+	"github.com/markliederbach/tflint-plugin-sdk/terraform/addrs"
 )
 
 // Config is an alternative representation of configs.Config.
