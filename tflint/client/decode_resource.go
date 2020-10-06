@@ -1,8 +1,6 @@
 package client
 
 import (
-	"log"
-
 	hcl "github.com/hashicorp/hcl/v2"
 	"github.com/markliederbach/tflint-plugin-sdk/terraform/addrs"
 	"github.com/markliederbach/tflint-plugin-sdk/terraform/configs"
@@ -32,7 +30,6 @@ type Resource struct {
 func decodeResource(resource *Resource) (*configs.Resource, hcl.Diagnostics) {
 	file, diags := parseConfig(resource.Config, resource.ConfigRange.Filename, resource.ConfigRange.Start)
 	if diags.HasErrors() {
-		log.Printf("[ERROR] parseConfig for `%s` resource has diag errors: %v", resource.Name, diags)
 		return nil, diags
 	}
 
@@ -40,7 +37,6 @@ func decodeResource(resource *Resource) (*configs.Resource, hcl.Diagnostics) {
 	if resource.Count != nil {
 		count, diags = parseExpression(resource.Count, resource.CountRange.Filename, resource.CountRange.Start)
 		if diags.HasErrors() {
-			log.Printf("[ERROR] parseExpression for `%s` resource has diag errors: %v", resource.Name, diags)
 			return nil, diags
 		}
 	}
@@ -49,14 +45,12 @@ func decodeResource(resource *Resource) (*configs.Resource, hcl.Diagnostics) {
 	if resource.ForEach != nil {
 		forEach, diags = parseExpression(resource.ForEach, resource.ForEachRange.Filename, resource.ForEachRange.Start)
 		if diags.HasErrors() {
-			log.Printf("[ERROR] parseExpression (forEach) for `%s` resource has diag errors: %v", resource.Name, diags)
 			return nil, diags
 		}
 	}
 
 	managed, diags := decodeManagedResource(resource.Managed)
 	if diags.HasErrors() {
-		log.Printf("[ERROR] decodeManagedResource for `%s` resource has diag errors: %v", resource.Name, diags)
 		return nil, diags
 	}
 
