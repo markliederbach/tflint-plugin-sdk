@@ -94,7 +94,6 @@ func (c *Client) WalkResources(resource string, walker func(*configs.Resource) e
 	for _, r := range response.Resources {
 		resource, diags := decodeResource(r)
 		if diags.HasErrors() {
-			log.Printf("[ERROR] Error decoding resource for `%s` resource: %v", r.Name, diags)
 			return diags
 		}
 
