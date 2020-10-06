@@ -85,11 +85,9 @@ func (c *Client) WalkResources(resource string, walker func(*configs.Resource) e
 
 	var response ResourcesResponse
 	if err := c.rpcClient.Call("Plugin.Resources", ResourcesRequest{Name: resource}, &response); err != nil {
-		log.Printf("[ERROR] Failed to receive response for `%s` resource: %v", resource, err)
 		return err
 	}
 	if response.Err != nil {
-		log.Printf("[ERROR] Error in response for `%s` resource: %v", resource, response.Err)
 		return response.Err
 	}
 
@@ -101,7 +99,6 @@ func (c *Client) WalkResources(resource string, walker func(*configs.Resource) e
 		}
 
 		if err := walker(resource); err != nil {
-			log.Printf("[ERROR] Error calling walker for `%s` resource: %v", resource.Name, err)
 			return err
 		}
 	}
